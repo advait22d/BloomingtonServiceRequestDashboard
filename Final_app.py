@@ -8,7 +8,9 @@ import datetime
 import plotly.express as px
 
 
-client = MongoClient("mongodb+srv://adt:adtroot@spendem.bjwbooc.mongodb.net/")
+# client = MongoClient("mongodb+srv://adt:adtroot@spendem.bjwbooc.mongodb.net/")
+client = MongoClient("mongodb+srv://adt:adtroo@spendem.bjwbooc.mongodb.net/?retryWrites=true&w=majority&appName=spendem")
+
 db = client.bloomington_service_request
 collection = db.service_request_2024
 
